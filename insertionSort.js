@@ -5,6 +5,7 @@ async function bubble_sort(){
     var grid=document.querySelector(".grid");
     var timeout=1000;
     rs=document.getElementById("rs").value;
+    document.getElementById("rs").value="";
     var num=rs.split(",");
 
 
@@ -74,4 +75,9 @@ table.appendChild(tbody);
         document.getElementById("data" + [i+1]).classList.add('insert');
     }
 }
+
+}
+function cancel(){
+    window.location.reload();
+   
 }
