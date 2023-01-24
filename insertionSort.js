@@ -46,28 +46,32 @@ table.appendChild(tbody);
 
 
     for(let i=0;i<num.length-1;i++){
+        
         for(let j=i+1;j>0;j--){
-
+        
             if (parseInt(document.getElementById("data" + [j]).innerHTML) <
             parseInt(document.getElementById("data" + [j - 1]).innerHTML)) {
-                await sleep(300)
+                await sleep(500)
                 document.getElementById("data" + [j - 1]).classList.add('exchange');
                 document.getElementById("data" + [j]).classList.add('exchange');
 
-                await sleep(300)
+                await sleep(500)
                 let temp = document.getElementById("data" + [j]).innerHTML;
                 document.getElementById("data" + [j]).innerHTML = document.getElementById("data" + [j - 1]).innerHTML;
                 document.getElementById("data" + [j - 1]).innerHTML = temp;
-                await sleep(300)
+                await sleep(500)
                 document.getElementById("data" + [j - 1]).classList.remove('exchange');
                 document.getElementById("data" + [j]).classList.remove('exchange');
-                await sleep(300)
-
+                await sleep(500)
+            
         }
         else{
             break;
         }
     }
-
+    document.getElementById("data" + [i]).classList.add('insert');
+    if(i+2==num.length){
+        document.getElementById("data" + [i+1]).classList.add('insert');
+    }
 }
 }
