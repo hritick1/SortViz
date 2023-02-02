@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://kit.fontawesome.com/fd9f6608c3.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ruda&family=Rufina:wght@700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono&family=Yeseva+One&display=swap"
+          rel="stylesheet">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg px-md-4 py-md-4 ">
+        <div class="container-fluid"> 
+         <h2 id="h"style="padding: 10px 5px 5px 5px;">Algo-Visualiser</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item list">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item list">
+                <a class="nav-link active" aria-current="page" href="#">Introduction</a>
+              </li>
+              <li class="nav-item dropdown list">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Algorithm
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item list" href="bubbleSort.html">Bubble-Sort</a></li>
+                  <li><a class="dropdown-item list" href="selectionSort.html">Selection-Sort</a></li>
+                  <li><a class="dropdown-item list" href="insertionSort.html">Insertion-Sort</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2 class="text-center"style="color:#205375;"> BUBBLE SORT</h2>
+      <div class="container coIntro">
+        
+        <div class="row">
+          <div class="col">
+            <img src="bsort.png"class="img-fluid im mt-2 " alt="" class="bubble-sort-img1">
+          </div>
+          <div class="col h5 fo p-4">
+            An in-place sorting algorithm that finds max. element in each cycle and puts
+            it in
+            appropriate position in list by performing swapping adjacent elements. In bubble sort, we continue
+            swapping adjacent elements until they are in correct order. As we need to iterate the whole array
+            for every element, the complexity of this algorithm is O(n^2).
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col h5 fo px-5">
+                Steps to implement bubble sort: </p>
+                In first cycle, Start by comparing 1st and 2nd element and swap if
+                1st element is greater. After that do the same for 2nd and 3rd element. At the end of cycle you will
+                get max element at the end of list. Now do the same in all subsequent cycles. Perform this for
+                (number of elements - 1) times. You will get sorted list.
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-light px-5  pt-2 pb-2 mt-lg-5 mx-lg-5"> <a
+                    href="bubbleSort.html">Visualise</a></button>
+            </div>
+          </div>
+    </div>
+
+
+    <h2 class="text-center"style="color:#205375;"> SELECTION SORT</h2>
+    <div class="container coIntro">
+      
+      <div class="row">
+        <div class="col">
+          <img src="seSort.png"class="img-fluid im mt-2 " alt="" class="bubble-sort-img1">
+        </div>
+        <div class="col h5 fo p-4">
+            Selection sort is a simple and efficient sorting 
+            algorithm that works by repeatedly selecting the smallest 
+            (or largest) element from the unsorted portion of the list 
+            and moving it to the sorted portion of the list. 
+            The algorithm repeatedly selects the smallest (or largest) 
+            element from the unsorted portion of the list and swaps it
+             with the first element of the unsorted portion.
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col h5 fo px-5">
+              Steps to implement Selection sort:<br>
+              In every iteration of the selection sort,
+               the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the beginning of unsorted subarray.
+              After every iteration sorted subarray size increase by one and 
+              unsorted subarray size decrease by one.
+          </div>
+          <div class="col">
+              <button type="button" class="btn btn-outline-light px-5  pt-2 pb-2 mt-lg-5 mx-lg-5"> <a
+                  href="selectionSort.html">Visualise</a></button>
+          </div>
+        </div>
+  </div>
+
+
+
+  <h2 class="text-center"style="color:#205375;"> INSERTION SORT</h2>
+  <div class="container coIntro">
+    
+    <div class="row">
+      <div class="col">
+        <img src="inSort.png"class="img-fluid im mt-2 " alt="" class="bubble-sort-img1">
+      </div>
+      <div class="col h5 fo p-4">
+        Insertion sort is a simple sorting algorithm that works
+         similar to the way you sort playing cards in your hands. 
+         The array is virtually split into a sorted and an unsorted part.
+          Values from the unsorted part are picked 
+        and placed at the correct position in the sorted part.
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col h5 fo px-5">
+            Steps to implement Insertion sort: <br>
+            Iterate from arr[1] to arr[N] over the array. 
+            Compare the current element (key) to its predecessor. 
+            If the key element is smaller than its predecessor,
+             compare it to the elements before. Move the greater elements 
+            one position up to make space for the swapped element.
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-light px-5  pt-2 pb-2 mt-lg-5 mx-lg-5"> <a
+                href="insertionSort.html">Visualise</a></button>
+        </div>
+      </div>
+</div>
+
+<footer class="bg-transparent text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center pt-1" style="background-color: rgba(255, 255, 255, 0.2);">
+      <i class=" ic fa fa-twitter" ></i>
+      <i class=" ic fa fa-instagram"></i>
+      <i class=" ic fa fa-facebook-square"></i>
+      <i class="ic fa fa-linkedin"></i>
+      <p>© Hritick Kumar Jha 2022 </p>
+    </div>
+  </footer>
+</body>
+</html>

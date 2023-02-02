@@ -1,90 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BubbleSort</title>
-    <!-- # bootstrap  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-   <style>
-    *{
-  padding: 0;
-  margin: 0;
-}
-
-h1{
-    text-align: center;
-}
-.grid{
-    display: flex;
-    flex-flow: row wrap;
-    width: 620px;
-   margin: auto;
-    
-}
-
-
-.exchange{
-    background-color:#7D8F69;
-    color: white;
-    border: 3px solid white;
-}
-
-td {
-   border: 1px solid black;
-}
-
-.input{
-    margin-left: 40px;
-    margin-top: 50px;
-    width: 500px;
-}
-
-.buton{
-    margin: 20px;
-    margin-left: 40px;
-    width: 35px;
-}
-.done
-{
-    background-color: #557153;
-    color: white;
-    border: 3px solid white;
-    
-}
-   </style>
-   
+    <title>Sorting-Visualiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fd9f6608c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&family=Rufina:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg px-md-4 py-md-4 ">
+        <div class="container-fluid"> 
+         <h2 id="h"style="padding: 10px 5px 5px 5px;">Algo-Visualiser</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item list">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item list">
+                <a class="nav-link active" aria-current="page" href="intro.html">Introduction</a>
+              </li>
+              <li class="nav-item dropdown list">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Algorithm
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item list" href="bubbleSort.html">Bubble-Sort</a></li>
+                  <li><a class="dropdown-item list" href="selectionSort.html">Selection-Sort</a></li>
+                  <li><a class="dropdown-item list" href="insertionSort.html">Insertion-Sort</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <h1>BUBBLE SORT</h1>
-    <section>
-        <form action="">
-            <div class="row">
-                <div class="col-lg-6 "><input  class="input" type="text" id="rs" placeholder="Enter The digit seperated by comma's "></div>
-                <div class="col-lg-6 buton"> <input type="button" id="calcbtn1" class=" btn btn-outline-dark " onclick="bubble_sort()"
-                    value="Simulate"></div>
-                    <div class="col-lg-6 buton"> <input type="button" id="calcbtn2" class=" btn btn-outline-dark " ><a href="selectionSort.html">InsertionSort</a></div>
-            </div>
-        </form>
-    </section>
-    
-    <div class="grid"></div>
-    <script src="algo.js"></script>
-    
+      <div class="container-fluid con">
+        <div class="row">
+          <div class="col mt-5 pt-4 px-lg-3 mx-lg-5">
+            <p id="title" class="display-5 mx-lg-1">“We help <br>
+              You Understanding<br>
+              Algorithm”</p>
+              <button type="button" class="btn btn-outline-light mt-2 mx-5">Learn more</button>
+          </div>
+          <div class="col mt-5 px-lg-5 mx-lg-5">
+        <img src="i1.png"class="img-fluid px-lg-5 mx-lg-5" alt="image">
+          </div>
+        </div>
+      </div>
+      <footer class="bg-transparent text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center pt-1" style="background-color: rgba(255, 255, 255, 0.2);">
+          <i class=" ic fa fa-twitter" ></i>
+          <i class=" ic fa fa-instagram"></i>
+          <i class=" ic fa fa-facebook-square"></i>
+          <i class="ic fa fa-linkedin"></i>
+          <p>© Hritick Kumar Jha 2022 </p>
+        </div>
+      </footer>
 </body>
-
 </html>

@@ -1,39 +1,3 @@
-// var rs;
-// var squares = [];
-// var num;
-
-// async function bubble_sort() {
-//     var grid = document.querySelector(".grid");
-//     var timeout = 1000;
-//     rs = document.getElementById("rs").value;
-//     var num=rs.split(",");
-//     console.log(typeof(num),num);
-
-
-// var table = document.createElement('table');
-//     table.classList.add("table", "flex-container");
-//     var tbody = document.createElement('tbody');
-//     var row = document.createElement('tr');
-//     grid.appendChild(table);
-
-// for (let i = 0; i < num.length; i++) {
-
-//     var column = document.createElement('td');
-//     column.setAttribute('id', "data" + [i]);
-
-//     var text = document.createTextNode(num[i]);
-//     column.appendChild(text);
-//     row.appendChild(column);
-
-
-
-
-// }
-// tbody.appendChild(row);
-// table.appendChild(tbody);
-
-
-
 var rs,num;
 var squares=[];
 
@@ -121,4 +85,8 @@ table.appendChild(tbody);
     
 
 
+}
+function cancel(){
+    window.location.reload();
+   
 }
