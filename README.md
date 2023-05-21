@@ -2,9 +2,6 @@ ShortViz
 ShortViz is a web application that visualizes sorting algorithms. It provides an interactive platform to understand and observe the step-by-step
 process of popular sorting algorithms such as bubble sort, selection sort, and insertion sort.
 
-Deployment
-The project is deployed and accessible at: https://hritick1.github.io/Sorting-Visualiser/
-
 Features
 Sorting Algorithm Visualization: ShortViz enables users to visualize sorting algorithms in action, helping them gain insights into the sorting process.
 Interactive Controls: Users can control the sorting speed, pause and resume the visualization, and step through each iteration, allowing for a more
